@@ -10,15 +10,14 @@ const HeroCard = ({
   first_appearance,
   characters,
 }) => {
-  console.log(heroImages('./dc-arrow.jpg').default);
+  console.log(heroImages[`${id}.jpg`].default);
   return (
     <div className="col">
       <div className="card " style={{ maxWidth: 540 }}>
         <div className="row">
           <div className="col-4">
             <img
-            
-              src={`${heroImages(`./${id}.jpg`).default}`}
+              src={heroImages[`${id}.jpg`].default}
               className="card-img-top h-100"
               alt={superhero}
             />
